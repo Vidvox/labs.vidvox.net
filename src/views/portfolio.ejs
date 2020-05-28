@@ -1,0 +1,39 @@
+<% page_name = 'portfolio' %>
+
+<%- include('partials/doc_top'); %>
+<%- include('partials/nav'); %>
+
+<header class="cool-header">
+  <h1>Portfolio</h1>
+  <span class="subheading">Our creative and development team takes on a wide variety of projects, including app development, interactive installation / digital signage, live show design, internal enterprise tools, open source codebases, and a whole lot more.</span>
+</header>
+
+<section class="portfolio">  
+  <header>
+    <a name="in-house" href="#in-house"><h2>In-House & Partnerships</h2></a>
+    <span class="subheading">Completed in-house or with other teams</span>
+  </header>
+  <ul>
+    <li>VDMX: Our flagship application for real time video processing on the Mac.</li>
+    <li>ISF for Motion: Plug in for using GLSL shaders in Apple Motion and FCP X. Available in the Mac App Store.</li>
+    <li>ISF for Jitter: Worked with Cycling74 to add support for the Interactive Shader Format to Max / Jitter.</li>
+    <li>ISF sharing website: Now on version 2, our online community website for sharing, viewing and editing GLSL shaders. (https://editor.isf.video/)</li>
+    <li>Colourlab: Development of machine learning powered color correction software for professional colorists.</li>
+
+  </ul>
+</section>
+
+<section class="portfolio">  
+  <header>
+    <a name="in-house" href="#in-house"><h2>Assists & Collabs</h2></a>
+    <span class="subheading">Bringing in our expertise to projects that need a help to get across the finish line</span>
+  </header>
+  <ul>
+    <li>Pixwel: Helped extend an existing open source pro video workflow to include support for ProRes 4444. (https://twitter.com/vidvox/prenc)</li>
+    <li>Synopsis Analyzer / Inspector: Worked with the Synopsis team to develop, polish and release these free video analyzer and inspector tools. (https://synopsis.video/analyzer/)</li>
+    <li>Syphon Recorder: Worked with Tom Butterworth to update the free Syphon Recorder app from QuickTime to AVFoundation.</li>
+  </ul>
+</section>
+
+<%- include('partials/footer'); %>
+<%- include('partials/doc_bottom'); %>

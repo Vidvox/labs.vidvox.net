@@ -1,0 +1,7 @@
+.hero {
+    background-color: $darker-grey;
+    height: 480px;
+    @media (max-width: 768px) {
+        height: 100vh;
+    }
+}

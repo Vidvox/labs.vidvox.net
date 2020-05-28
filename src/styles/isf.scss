@@ -1,21 +1,17 @@
-$white: #E5ECE6;
-$black: #000702;
-$dark-grey: #323933;
-$darker-grey: #212823;
-$link-color: #02ff3f;
+$white: rgb(236, 234, 229);
+$black: #070300;
+$dark-grey: #393732;
+$darker-grey: #282621;
+$link-color: #ffbc02;
 $text-color: #b4bbb6;
 $accent: $black;
 
 $transition-duration: 250ms;
 
-
-@import 'modules/grid-list.scss';
 @import 'modules/nav.scss';
 @import 'modules/footer.scss';
-@import 'modules/integrations.scss';
-@import 'modules/examples.scss';
-@import 'modules/using-isf.scss';
-@import 'modules/tutorials.scss';
+@import 'modules/hero.scss';
+@import 'modules/portfolio.scss';
 
 * {
     margin:             0;
@@ -97,6 +93,7 @@ ul, ol {
     text-transform: uppercase;
     font-weight: 500;
     font-size: 12px;
+    margin: 0 21.228070176%;
 }
 
 p {
@@ -293,16 +290,6 @@ section.text {
     .subheading {
         display: block;
         padding-top: 18px;
-    }
-}
-
-#creative-coding {
-    ul {
-        @include grid-list($v_padding: 20px);
-        grid-template-columns: repeat(3, 1fr);
-        @media (max-width: 768px) {
-            grid-template-columns: repeat(2, 1fr);
-        }
     }
 }
 
