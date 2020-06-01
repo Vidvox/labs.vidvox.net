@@ -37,6 +37,11 @@ gulp.task('images-minified',function(){
     .pipe(gulp.dest('build/images/'))
 })
 
+gulp.task('webfonts', function () {
+  return gulp.src('src/webfonts/*')
+    .pipe(gulp.dest('build/styles/webfonts'))
+})
+
 gulp.task('embed-svg',function(){  
   return gulp.src('*.html')
     .pipe(embedSvg())
@@ -86,13 +91,14 @@ gulp.task('watch', function() {
     gulp.watch('src/js/**/*.js', ['scripts'])
     gulp.watch('src/views/**/*.ejs', ['ejs'])
     gulp.watch('src/images/**/*.*', ['images'])
+    gulp.watch('src/webfonts/**/*.*', ['webfonts'])
     gulp.watch('src/videos/**/*.*', ['videos'])
     gulp.watch(['build/**'], ['livereload']);
 })
 
-gulp.task('build', ['sass', 'scripts', 'ejs', 'images', 'videos', 'sitemap'])
+gulp.task('build', ['sass', 'scripts', 'ejs', 'images', 'webfonts', 'videos', 'sitemap'])
 
-gulp.task('deploy', ['ejs', 'sass', 'scripts', 'images', 'videos', 'redirects', 'move-google-verification'], function (cb) {
+gulp.task('deploy', ['ejs', 'sass', 'scripts', 'images', 'webfonts', 'videos', 'redirects', 'move-google-verification'], function (cb) {
   runSequence(['sitemap'], cb);
 })
 
