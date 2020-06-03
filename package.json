@@ -1,16 +1,16 @@
 {
-  "name": "isfWebsite",
-  "description": "Website for the ISF standard",
+  "name": "VIDVOXlabsWEBSITE",
+  "description": "Website for the VIDVOX Labs",
   "license": "UNLICENSED",
   "version": "1.0.0",
-  "homepage": "https://isf.video",
+  "homepage": "https://labs.vidvox.net",
   "author": {
-    "name": "VIDVOX, LLC",
-    "email": "support@vidvox.net"
+    "name": "Olivia Artz",
+    "email": "liv@oliviaartz.com"
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/vidvox/isf.video"
+    "url": "git://github.com/vidvox/labs.vidvox.net"
   },
   "dependencies": {
     "ejs": "^2.5.8",
