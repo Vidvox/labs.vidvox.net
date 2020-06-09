@@ -205,7 +205,6 @@ html.noscroll body {height: 100%; overflow: hidden}
         width: 14.868421053%;
         margin-left: 10.5263157895%;
         text-align: right;
-        padding-bottom: 120px;
         h2, ol {
             font-size: 17px;
             line-height: 1.5882352941;
@@ -252,7 +251,7 @@ html.noscroll body {height: 100%; overflow: hidden}
     img {
         display: block;
         margin-top: 24px;
-        width: 61.803398875%;
+        width: calc(100% - 12px);
         border-radius: 8px;
         object-fit: cover;
     }
@@ -263,6 +262,11 @@ html.noscroll body {height: 100%; overflow: hidden}
             margin-left: 10%;
             margin-right: 10%;
             text-align: left;
+            ol {
+                li {
+                    float: none;
+                }
+            }
         }
     }
 }
