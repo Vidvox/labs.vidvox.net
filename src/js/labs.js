@@ -15,6 +15,6 @@ if(title) {
   });
 }
 
-mediumZoom('.tutorial-steps img', {
-  background: 'rgba(50,57,51, 0.9)'
+mediumZoom('.blog-post img', {
+  background: 'rgba(57,55,50, 0.9)'
 })
