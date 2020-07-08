@@ -1,6 +1,6 @@
 #nav {
     position: relative;
-    background-color: $dark-grey;
+    z-index: 1;
     transition: all 400ms ease;
     #logo img {
         transition: all 400ms ease;

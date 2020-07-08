@@ -202,6 +202,10 @@ html.noscroll body {height: 100%; overflow: hidden}
     }
 }
 
+.hero + .big-labels {
+    padding-top: 24px;
+}
+
 .blog-post {
     aside {
         float: left;
