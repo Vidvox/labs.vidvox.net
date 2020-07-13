@@ -52,11 +52,11 @@
     }
     @media (max-width: 899px) {
         #logo img {
-            width: 68px;
+            width: 100px;
         }
-        padding: 8px 5.263157895%;
+        padding: 16px calc(10px + 5.263157895%);
         nav {
-            transition: height 200ms ease-in;
+            transition-duration: 0ms;
             height: 0;
             overflow: hidden;
             // text-align: center;
@@ -65,8 +65,8 @@
             top: -32px;
             left: 0;
             right: 0;
-            padding-top: 32px;
-            background: $dark-grey;
+            padding-top: 24px;
+            background: $darker-grey;
             ul {
                 margin: 12px 0;
                 a {
@@ -84,6 +84,7 @@
             }
             &.open {
                 height: calc(100vh - 20px);
+                transition: height 200ms ease-in;
                 top: 55px;
             }
         }
@@ -91,7 +92,7 @@
             display: block;
             cursor: pointer;
             position: absolute;
-            top: 2px;
+            top: 4px;
             right: 5.263157895%;
             width: 48px;
             height: 48px;
